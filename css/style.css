@@ -1,3 +1,5 @@
+* {box-sizing: border-box;}
+
 body {background-color: lightgrey;
     font-family: 'Open Sans', sans-serif; 
     font-size: 16px; /* sets the font size to 16px */
@@ -12,13 +14,28 @@ h3{font-size: 1.75em; font-weight: 400;}
 h4{font-size: 1.35em; font-weight: 400;}
 img {width: 100%}
 
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #F3F8F2;
+    text-align: center;
+    padding: 10px 0;
+    width: [object Object]px; 
+	height: [object Object]px; 
+	background: #F3F8F2; 
+	border: none; 
+	box-shadow: 14px 13px 25px rgba(0, 0, 0, 0.1)  ; 
+	-webkit-box-shadow: 14px 13px 25px rgba(0, 0, 0, 0.1)  ; 
+	-moz-box-shadow: 14px 13px 25px rgba(0, 0, 0, 0.1)  ; }
+
 a {color: #1A5E63; text-decoration: none; /*no underlining*/}
 a:visited { /*visited link */ color:#1A5E63}
 a:active { /* selected link */ color: #1E3888}
 a:hover {color: #6FBF4A; text-decoration: underline; /*underlining when hovering over a link*/}
 a:hover, a:focus {color: #6FBF4A; text-decoration: underline;}
 
-.button {background-color: transparent; 
+.button {background-color: transparent;
+        display: inline-block; 
         color: #1A5E63; 
         text-transform: uppercase;
         font-weight: 400;
@@ -48,3 +65,30 @@ a:hover, a:focus {color: #6FBF4A; text-decoration: underline;}
                 border: 2px solid #1A5E63;}
 .button.email:active {color: #1E3888;}
 .button.email:hover {background-color: #1A5E63; color: #ffffff;}
+
+/* layout styling */
+
+.container {padding: 0 15px}
+.row {margin: 25px 0;}
+#work .row{ padding-bottom: 25px; border-bottom: 1px solid #1A5E63}
+#hero h1 {text-align: center;}
+.logo {max-width: 250px;}
+nav > ul {list-style-type: none;
+        padding: 0;}
+nav > ul > li{display: inline-block;}
+nav > ul > li > a{
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1A5E63;}
+
+#hero {background-color: #F3F8F2;
+        padding: 20px 0;
+        display: inline-block;
+        width: 100%;}
+
+main {padding-top: 133px;}
+
+
+
+
