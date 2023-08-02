@@ -15,6 +15,7 @@ h4{font-size: 1.35em; font-weight: 400;}
 p{padding-left: 5px; padding-right: 5px;}
 
 img {width: 100%;}
+svg {width: 100%; height: auto;}
 picture{text-align: center;}
 
 header {
@@ -86,7 +87,7 @@ nav > ul > li > a{
         display: inline-block;
         width: 100%;}
 
-main {padding-top: 133px;}
+main {padding-top: 183px;}
 
 
 .social {text-align: center;}
@@ -98,8 +99,10 @@ margin: 0 10px;}
 .contact a {text-align: center;
 display: block;}
 .contact a:last-child {padding-bottom: 15px;}
+.contactp {text-align: center;}
 
 .copyright {font-size: 10px; text-align: center;}
 
 .tableofcontents {list-style: none; padding-left: 5px;}
 
+.svg-logo-container{display: flex; align-items: center;}
