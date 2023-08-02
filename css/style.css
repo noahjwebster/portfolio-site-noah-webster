@@ -1,6 +1,6 @@
 * {box-sizing: border-box;}
 
-body {background-color: lightgrey;
+body {background-color: white;
     font-family: 'Open Sans', sans-serif; 
     font-size: 16px; /* sets the font size to 16px */
     font-weight: 300; /* sets the font weight to 300 */
@@ -8,21 +8,24 @@ body {background-color: lightgrey;
     color: #4a4a4a;}
 
 h1, h2, h3, h4 {line-height: 1.4}
-h1{font-size: 2.75em; font-weight: 700}
-h2{font-size: 2.75em; font-weight: 700;}
+h1{font-size: 2.75em; font-weight: 700; text-align: center;}
+h2{font-size: 2.75em; font-weight: 700; text-align: center;}
 h3{font-size: 1.75em; font-weight: 400;}
 h4{font-size: 1.35em; font-weight: 400;}
-img {width: 100%}
+p{padding-left: 5px; padding-right: 5px;}
+
+img {width: 100%;}
+picture{text-align: center;}
 
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    background-color: #F3F8F2;
+    background-color: lightgray;
     text-align: center;
     padding: 10px 0;
     width: [object Object]px; 
 	height: [object Object]px; 
-	background: #F3F8F2; 
+	background: light grey; 
 	border: none; 
 	box-shadow: 14px 13px 25px rgba(0, 0, 0, 0.1)  ; 
 	-webkit-box-shadow: 14px 13px 25px rgba(0, 0, 0, 0.1)  ; 
@@ -59,22 +62,18 @@ a:hover, a:focus {color: #6FBF4A; text-decoration: underline;}
 .button.resume:active {color: #1E3888;}
 .button.resume:hover {background-color: #1A5E63; color: #ffffff;}
 
-.button.email {background-color: transparent; 
-                color: #1A5E63; 
-                text-transform: uppercase; 
-                border: 2px solid #1A5E63;}
-.button.email:active {color: #1E3888;}
-.button.email:hover {background-color: #1A5E63; color: #ffffff;}
-
 /* layout styling */
+
 
 .container {padding: 0 15px}
 .row {margin: 25px 0;}
 #work .row{ padding-bottom: 25px; border-bottom: 1px solid #1A5E63}
 #hero h1 {text-align: center;}
 .logo {max-width: 250px;}
+.logo {width: 100px; height: 100px; padding-bottom: 0
+    ;}
 nav > ul {list-style-type: none;
-        padding: 0;}
+        padding: 0px;}
 nav > ul > li{display: inline-block;}
 nav > ul > li > a{
     padding: 0 15px;
@@ -82,7 +81,7 @@ nav > ul > li > a{
     font-weight: 700;
     color: #1A5E63;}
 
-#hero {background-color: #F3F8F2;
+#hero {background-color: white;
         padding: 20px 0;
         display: inline-block;
         width: 100%;}
@@ -90,5 +89,17 @@ nav > ul > li > a{
 main {padding-top: 133px;}
 
 
+.social {text-align: center;}
+.social a{display: inline-block;
+margin: 0 10px;}
+.social svg {width: 50px; height: auto;}
 
+.summary {padding-bottom: 25px; border-bottom: 1px solid #1A5E63;}
+.contact a {text-align: center;
+display: block;}
+.contact a:last-child {padding-bottom: 15px;}
+
+.copyright {font-size: 10px; text-align: center;}
+
+.tableofcontents {list-style: none; padding-left: 5px;}
 
