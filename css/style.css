@@ -59,9 +59,11 @@ a:hover, a:focus {color: #6FBF4A; text-decoration: underline;}
     border-radius: 3px;
     border-bottom: 2px solid #1E3888;
     transition: 0.2s opacity;
-    border: 2px solid #1A5E63;}
+    border: 2px solid #1A5E63;
+    transition-duration: 0.2s;
+    transition-property: opacity;}
 .button.resume:active {color: #1E3888;}
-.button.resume:hover {background-color: #1A5E63; color: #ffffff;}
+.button.resume:hover {background-color: #1A5E63; color: #ffffff; opacity: 0.8}
 
 /* layout styling */
 
@@ -106,3 +108,76 @@ display: block;}
 .tableofcontents {list-style: none; padding-left: 5px;}
 
 .svg-logo-container{display: flex; align-items: center;}
+
+
+
+@keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+    from{transform: translate(0,50px);}
+    to{transform: translate(200px,50px);}
+}
+
+.sun{
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+/*================ media query breakpoints==================*/
+/*----- medium devices (640px and larger)-------*/
+@media only screen and (min-width: 640px){
+    header{
+        text-align: unset;
+        padding: 20px 0 13px;}
+
+    .header-nav{ 
+        width: auto;
+        float: right;
+        margin-top: 18px;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+    [class*=col-] {
+        float: left;
+        padding-left: 10px;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+}
+
+/*----- large devices (1024px and larger)-------*/
+@media only screen and (min-width: 1024px){
+    .col-lg-7{
+        width: 58.33%;
+    }
+    .col-lg-5{
+        width: 41.66%;
+    }
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*----- xlarge devices (1440px and larger)-------*/
+@media only screen and (min-width: 1440px){
+    
+}
