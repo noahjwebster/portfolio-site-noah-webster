@@ -46,10 +46,11 @@ a:hover, a:focus {color: #6FBF4A; text-decoration: underline;}
         padding: 10px;
         border-radius: 3px;
         border-bottom: 2px solid #1E3888;
-        transition: 0.2s opacity;
+        opacity: 1;
+        transition: all .2s ease;
         border: 2px solid #1A5E63;}
 .button:active {color: #1E3888;}
-.button:hover {background-color: #1A5E63; color: #ffffff;}
+.button:hover {background-color: #1A5E63; color: #ffffff; opacity: 0.8}
 
 .button.resume {background-color: transparent; 
     color: #1A5E63; 
@@ -85,13 +86,13 @@ nav > ul > li > a{
     color: #1A5E63;}
 
 #hero {background-color: white;
-        padding: 20px 0;
+        padding: 20px;
         display: inline-block;
         width: 100%;}
 
 main {padding-top: 183px;}
 
-
+.hero-p {text-align: center;}
 .social {text-align: center;}
 .social a{display: inline-block;
 margin: 0 10px;}
