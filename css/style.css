@@ -14,6 +14,7 @@ h3{font-size: 1.75em; font-weight: 400;}
 h4{font-size: 1.35em; font-weight: 400;}
 p{padding-left: 5px; padding-right: 5px;}
 
+
 img {width: 100%;}
 svg {width: 100%; height: auto;}
 picture{text-align: center;}
@@ -22,7 +23,6 @@ header {
     position: absolute;
     width: 100%;
     background-color: lightgray;
-    text-align: center;
     padding: 10px 0;
     width: [object Object]px; 
 	height: [object Object]px; 
@@ -73,12 +73,12 @@ a:hover, a:focus {color: #6FBF4A; text-decoration: underline;}
 .row {margin: 25px 0;}
 #work .row{ padding-bottom: 25px; border-bottom: 1px solid #1A5E63}
 #hero h1 {text-align: center;}
-.logo {max-width: 250px;}
+.logo {max-width: 150px;}
 .logo {width: 100px; height: 100px; padding-bottom: 0
     ;}
 nav > ul {list-style-type: none;
-        padding: 0px;}
-nav > ul > li{display: inline-block;}
+        padding: 0px;
+        margin: o;}
 nav > ul > li > a{
     padding: 0 15px;
     text-transform: uppercase;
@@ -90,7 +90,7 @@ nav > ul > li > a{
         display: inline-block;
         width: 100%;}
 
-main {padding-top: 183px;}
+main {padding-top: 142px;}
 
 .hero-p {text-align: center;}
 .social {text-align: center;}
@@ -110,7 +110,41 @@ display: block;}
 
 .svg-logo-container{display: flex; align-items: center;}
 
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
 
+.navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+  }
+
+.navtoggle.responsive li  {
+    display: block;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid darkgrey;
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
+
+  .icon i {
+    font-size: 30px;}
 
 @keyframes color-change {
     from {fill: #edc655;}
@@ -161,6 +195,20 @@ display: block;}
         clear: both;
         display: table;
       }
+      .logo {min-width: 250px;}
+      nav > ul > li{display: inline-block;}
+
+      .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+
+      .navtoggle li:last-child {
+        display: none;
+      }
+
+      nav > ul {
+        margin: 1em 0;
+      }
 }
 
 /*----- large devices (1024px and larger)-------*/
@@ -176,9 +224,18 @@ display: block;}
         margin-left: auto;
         margin-right: auto;
     }
-}
+    .logo {min-width: 250px;}
+    nav > ul > li{display: inline-block;}
 
-/*----- xlarge devices (1440px and larger)-------*/
-@media only screen and (min-width: 1440px){
-    
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+      }
+
+      .navtoggle li:last-child {
+        display: none;
+      }
+
+      nav > ul {
+        margin: 1em 0;
+      }
 }

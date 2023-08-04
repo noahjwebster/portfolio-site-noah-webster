@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noah Webster Portfolio</title>
+    <script src="https://kit.fontawesome.com/9315398c20.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +16,7 @@
 <body> 
     <header>
     <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
         <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="42" height="31" viewBox="0 0 42 31">
             <g id="Group_3" data-name="Group 3" transform="translate(-147 -143)">
               <text id="DESIGN" transform="translate(151 172)" font-size="9" font-family="ArialUnicodeMS, Arial Unicode MS"><tspan x="0" y="0">DESIGN</tspan></text>
@@ -44,9 +46,11 @@
             <ul>    
                 <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav>
+    </div>
     </div>
 </header>
 
@@ -705,6 +709,10 @@
             <p class="copyright">Copyright NOAH-WEBSTER 2023</p>
         </div>
     </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
