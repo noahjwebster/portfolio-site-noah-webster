@@ -86,9 +86,9 @@ nav > ul > li > a{
     color: #1A5E63;}
 
 #hero {background-color: white;
-        padding: 20px;
-        display: inline-block;
-        width: 100%;}
+  padding: 20px;
+  display: inline-block;
+  width: 100%; }
 
 main {padding-top: 142px;}
 
@@ -171,6 +171,7 @@ display: block;}
     animation-direction: alternate;
     animation-timing-function: linear;
   }
+
 /*================ media query breakpoints==================*/
 /*----- medium devices (640px and larger)-------*/
 @media only screen and (min-width: 640px){
