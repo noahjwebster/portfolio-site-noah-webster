@@ -14,7 +14,6 @@ h3{font-size: 1.75em; font-weight: 400;}
 h4{font-size: 1.35em; font-weight: 400;}
 p{padding-left: 5px; padding-right: 5px;}
 
-
 img {width: 100%;}
 svg {width: 100%; height: auto;}
 picture{text-align: center;}
@@ -37,6 +36,7 @@ a:visited { /*visited link */ color:#1A5E63}
 a:active { /* selected link */ color: #1E3888}
 a:hover {color: #6FBF4A; text-decoration: underline; /*underlining when hovering over a link*/}
 a:hover, a:focus {color: #6FBF4A; text-decoration: underline;}
+
 
 .button {background-color: transparent;
         display: inline-block; 
@@ -67,7 +67,6 @@ a:hover, a:focus {color: #6FBF4A; text-decoration: underline;}
 .button.resume:hover {background-color: #1A5E63; color: #ffffff; opacity: 0.8}
 
 /* layout styling */
-
 
 .container {padding: 0 15px}
 .row {margin: 25px 0;}
@@ -146,32 +145,18 @@ display: block;}
   .icon i {
     font-size: 30px;}
 
-@keyframes color-change {
-    from {fill: #edc655;}
-    to {fill: #f76414;}
-}
-
-@keyframes cloud-move {
-    from{transform: translate(0,50px);}
-    to{transform: translate(200px,50px);}
-}
-
-.sun{
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
-
-.cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-
+.hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+.hero-content {
+      margin: 0 auto; /* Add this line */
+      text-align: center;
+      max-width: 600px; /* Optional: Set a maximum width for the content */
+    }
 /*================ media query breakpoints==================*/
 /*----- medium devices (640px and larger)-------*/
 @media only screen and (min-width: 640px){
@@ -210,6 +195,9 @@ display: block;}
       nav > ul {
         margin: 1em 0;
       }
+.resize-img-noah {width: 50%}
+.resize-img-vela {width: 75%}
+.picture {text-align: center;}
 }
 
 /*----- large devices (1024px and larger)-------*/
@@ -220,11 +208,7 @@ display: block;}
     .col-lg-5{
         width: 41.66%;
     }
-    .container {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
     .logo {min-width: 250px;}
     nav > ul > li{display: inline-block;}
 
@@ -239,4 +223,9 @@ display: block;}
       nav > ul {
         margin: 1em 0;
       }
+
+.resize-img-noah {width: 50%}
+.resize-img-vela {width: 75%}
+.picture {text-align: center;}
+
 }
