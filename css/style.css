@@ -18,6 +18,8 @@ img {width: 100%;}
 svg {width: 100%; height: auto;}
 picture{text-align: center;}
 
+.velapicture img{width: 58%;}
+
 header {
     position: absolute;
     width: 100%;
@@ -241,7 +243,7 @@ display: block;}
 
 .website-macbook-iphone img{width: 75%;
 align-items: center;}
-.vela-picture-resize img{width: 70%;}
+.vela-picture-resize img{width: 35%;}
 .website-picture-resize img{width: 50%;}
 
 .headingcontainer {
