@@ -23,7 +23,7 @@ header {
     width: 100%;
     background-color: lightgray;
     padding: 10px 0;
-	background: grey; 
+	background: lightgrey; 
 	border: none; 
 	box-shadow: 14px 13px 25px rgba(0, 0, 0, 0.1)  ; 
 	-webkit-box-shadow: 14px 13px 25px rgba(0, 0, 0, 0.1)  ; 
@@ -155,6 +155,114 @@ display: block;}
       text-align: center;
       max-width: 600px; /* Optional: Set a maximum width for the content */
     }
+
+.website-ipad-green {
+      display: flex;
+      align-items: flex-start; /* Align elements to the top */
+    }
+    
+    .website-ipad-green img {
+      width: 50%; /* Adjust the width of the image */
+      margin-right: 20px; /* Add spacing between the image and text */
+    }
+    
+    .website-ipad-green p {
+      flex: 1; /* Allow the text to take up remaining space */
+    }
+
+.website-macbook-yellow {
+      display: flex;
+      align-items: flex-start; /* Align elements to the top */
+    }
+    
+    .website-macbook-yellow img {
+      width: 25%; /* Adjust the width of the image */
+      margin-right: 20px;
+      margin-left: 20px; /* Add spacing between the image and text */
+      order: 2;
+    }
+    
+    .website-macbook-yellow p {
+      flex: 1; /* Allow the text to take up remaining space */
+      order: 1;
+    }
+
+.design-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .svg-colors-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px; /* Adjust margin as needed */
+  }
+
+  /* Style for individual SVGs */
+  .svg-colors-container svg {
+      width: 12%; /* Adjust the width of SVGs */
+      height: auto;
+      margin: 0 10px; /* Adjust margin between SVGs */
+  }
+
+ .website-macbook-orange {
+    display: flex;
+    align-items: flex-start; /* Align elements to the top */
+  }
+  
+  .website-macbook-orange img {
+    width: 25%; /* Adjust the width of the image */
+    margin-right: 20px;
+    margin-left: 20px; /* Add spacing between the image and text */
+    order: 2;
+  }
+  
+  .website-macbook-orange p {
+    flex: 1; /* Allow the text to take up remaining space */
+    order: 1;
+  }
+
+
+  .website-ipad-pink {
+    display: flex;
+    align-items: flex-start; /* Align elements to the top */
+  }
+  
+  .website-ipad-pink img {
+    width: 30%; /* Adjust the width of the image */
+    margin-right: 20px; /* Add spacing between the image and text */
+  }
+  
+  .website-ipad-pink p {
+    flex: 1; /* Allow the text to take up remaining space */
+  }
+
+.website-macbook-iphone img{width: 75%;
+align-items: center;}
+.vela-picture-resize img{width: 70%;}
+.website-picture-resize img{width: 50%;}
+
+.headingcontainer {
+  text-align: center;
+  padding: 0 20px; /* Add some horizontal padding for white space on the sides */
+}
+
+.headingcontainer p {
+  max-width: 800px; /* Limit the maximum width of the paragraph to make it wrap into multiple lines */
+  margin: 0 auto; /* Center the paragraph within the container */
+}
+
+.bodycontainer {
+  padding: 0 20px; /* Add some horizontal padding for white space on the sides */
+}
+
+.bodycontainer p {
+  max-width: 1200px; /* Limit the maximum width of the paragraph to make it wrap into multiple lines */
+  margin: 0 auto; /* Center the paragraph within the container */
+}
+
 /*================ media query breakpoints==================*/
 /*----- medium devices (640px and larger)-------*/
 @media only screen and (min-width: 640px){
@@ -195,9 +303,9 @@ display: block;}
       }
 .resize-img-noah {width: 50%}
 .resize-img-vela {width: 75%}
+.resize-img-iphone-red {width: 75%}
 .picture {text-align: center;}
 }
-
 /*----- large devices (1024px and larger)-------*/
 @media only screen and (min-width: 1024px){
     .col-lg-7{
@@ -224,6 +332,7 @@ display: block;}
 
 .resize-img-noah {width: 50%}
 .resize-img-vela {width: 75%}
+.resize-img-iphone-red {width: 75%}
 .picture {text-align: center;}
 
 }

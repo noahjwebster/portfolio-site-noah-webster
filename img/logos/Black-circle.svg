@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="335" height="329" viewBox="0 0 335 329">
+  <defs>
+    <clipPath id="clip-Black-circle">
+      <rect width="335" height="329"/>
+    </clipPath>
+  </defs>
+  <g id="Black-circle" clip-path="url(#clip-Black-circle)">
+    <rect width="335" height="329" fill="#fff"/>
+    <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(16 20)" stroke="#707070" stroke-width="1">
+      <circle cx="150" cy="150" r="150" stroke="none"/>
+      <circle cx="150" cy="150" r="149.5" fill="none"/>
+    </g>
+    <text id="_000000" data-name="#000000" transform="translate(88 185)" fill="#fff" font-size="40" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="0">#000000</tspan></text>
+  </g>
+</svg>
